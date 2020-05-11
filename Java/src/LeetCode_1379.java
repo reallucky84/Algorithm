@@ -1,8 +1,12 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
-//https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/submissions/
+// https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/submissions/
 public class LeetCode_1379 {
+
+    public static void main(String[] args){
+
+    }
 
     public final TreeNode getTargetCopy(final TreeNode original, final TreeNode cloned, final TreeNode target) {
 
