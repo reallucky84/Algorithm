@@ -65,6 +65,4 @@ public class LeetCode_1302 {
             this.right = right;
         }
     }
-
-
 }
