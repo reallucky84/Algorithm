@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 
 
 // https://www.acmicpc.net/problem/2529
-public class BackJoon_2529 {
+public class BaekJoon_2529 {
 
     public static void main(String[] args) throws IOException {
 
