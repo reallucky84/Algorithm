@@ -91,7 +91,6 @@ public class BaekJoon_1339 {
             i++;
         }
         return true;
-
     }
 
     public static void swap(int x, int y, int[] arr) {
