@@ -1,34 +1,28 @@
+
+
 public class LeetCode_1008 {
 
     public TreeNode bstFromPreorder(int[] preorder) {
-        if (preorder == null || preorder.length == 0) {
-            return null;
+        TreeNode root = new TreeNode(preorder[0]);
+
+        for(int i = 1; i < preorder.length;i++){
+            root = insert(root, preorder[i]);
         }
 
-        TreeNode root = new TreeNode(preorder[0]);
-        buildTree(preorder, root, 1);
         return root;
-
     }
 
-    public static void buildTree(int[] preorder, TreeNode parent, int index) {
-        if (index == preorder.length || parent == null) {
-            return;
+    public TreeNode insert(TreeNode root, int key){
+        if(root == null){
+            return new TreeNode(key);
         }
 
-        if (preorder[index] < parent.val) {
-            if (parent.left == null) {
-                parent.left = new TreeNode(preorder[index]);
-            } else {
-
-            }
-        } else {
-            if (parent.right == null) {
-                parent.right = new TreeNode(preorder[index]);
-            } else {
-
-            }
+        if(root.val >= key){
+            root.left = insert(root.left, key);
+        } else{
+            root.right = insert(root.right, key);
         }
+        return root;
     }
 
     public static class TreeNode {
