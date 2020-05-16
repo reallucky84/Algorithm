@@ -8,9 +8,9 @@ public class LeetCode_1 {
         Map<Integer, Integer> map = new HashMap<>();
 
         int i = 0;
-        for(int n : nums){
+        for (int n : nums) {
 
-            if(map.containsKey(target - n) && map.get(target - n) != i){
+            if (map.containsKey(target - n) && map.get(target - n) != i) {
                 result[0] = map.get(target - n);
                 result[1] = i;
                 break;
@@ -20,6 +20,7 @@ public class LeetCode_1 {
         }
 
         return result;
-    }}
-
+    }
 }
+
+
