@@ -26,7 +26,6 @@ public class BaekJoon_15658 {
             k++;
         }
 
-
         temp = br.readLine().split(" ");
         int plus = 0;
         int minus = 0;
