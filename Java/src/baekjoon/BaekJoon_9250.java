@@ -11,23 +11,24 @@ public class BaekJoon_9250 {
     private static class Trie {
 
         public Node root;
-        public List<String> wordList;
+//        public List<String> wordList;
 
         public Trie() {
             root = new Node();
-            wordList = new ArrayList<>();
+//            wordList = new ArrayList<>();
         }
 
         public void insertString(String s) {
-            wordList.add(s);
-            int wordIdx = wordList.size() - 1;
-            insert(root, s.toCharArray(), 0, wordIdx);
+//            wordList.add(s);
+//            int wordIdx = wordList.size() - 1;
+            insert(root, s.toCharArray(), 0);
         }
 
-        private void insert(Node node, char[] s, int index, int wordIdx) {
+        private void insert(Node node, char[] s, int index) {
             int len = s.length;
             if (index == len) {
-                node.isWord = wordIdx;
+//                node.isWord = wordIdx;
+                node.isWord = 1;
 //                System.out.println();
                 return;
             }
@@ -38,7 +39,7 @@ public class BaekJoon_9250 {
                 node.children[charIdx] = new Node();
 //                System.out.print('-');
             }
-            insert(node.children[charIdx], s, index + 1, wordIdx);
+            insert(node.children[charIdx], s, index + 1);
         }
 
         public void makeFail() {
@@ -63,16 +64,8 @@ public class BaekJoon_9250 {
                             p = p.children[i];
                         }
                         child.fail = p;
-
-//                        while (child.fail == null) {
-//                            if (p == root && p.children[i] == null) {
-//                                child.fail = root;
-//                            } else if (p.children[i] != null) {
-//                                child.fail = p.children[i];
-//                            }
-//                            p = p.fail;
-//                        }
                     }
+                    child.isWord |= child.fail.isWord;
                     queue.offer(child);
                 }
             }
@@ -83,7 +76,7 @@ public class BaekJoon_9250 {
             Node cur = root;
             for (char c : s) {
                 int charIdx = c - 'a';
-                System.out.print(c);
+//                System.out.print(c);
                 while (cur != root && cur.children[charIdx] == null) {
                     cur = cur.fail;
                 }
@@ -92,21 +85,14 @@ public class BaekJoon_9250 {
                     cur = cur.children[charIdx];
                 }
 
-//                if (cur.children[charIdx] != null) {
-//                    cur = cur.children[charIdx];
-//                    System.out.println(" move");
-//                } else {
-//                    System.out.println(" fail");
-//                    if(cur.fail != null) cur = cur.fail;
-//                }
-                if (cur.isWord > -1) return true;
+                if (cur.isWord > 0) return true;
             }
             return false;
         }
 
         private static class Node {
             public Node[] children = new Node[26];
-            public int isWord = -1;
+            public int isWord = 0;
             public Node fail;
         }
     }
