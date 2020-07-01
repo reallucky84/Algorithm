@@ -3,12 +3,9 @@ package baekjoon;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
 
-// https://www.acmicpc.net/problem/15658
+//연산자 끼워넣기 (2)
+//https://www.acmicpc.net/problem/15658
 public class BaekJoon_15658 {
 
     public static int n = 0;

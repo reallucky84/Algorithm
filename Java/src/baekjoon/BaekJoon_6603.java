@@ -6,7 +6,8 @@ import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.List;
 
-// https://www.acmicpc.net/problem/6603
+//로또
+//https://www.acmicpc.net/problem/6603
 public class BaekJoon_6603 {
 
     public static void main(String[] args) throws IOException {

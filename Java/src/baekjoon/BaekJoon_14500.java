@@ -5,7 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-// https://www.acmicpc.net/problem/14888
+//테트로미노
+//https://www.acmicpc.net/problem/14500
 public class BaekJoon_14500 {
 
     public static void main(String[] args) throws IOException {
@@ -25,9 +26,6 @@ public class BaekJoon_14500 {
         for(int[] h: nums){
             System.out.println(Arrays.toString(h));
         }
-
-
-
 
     }
 }

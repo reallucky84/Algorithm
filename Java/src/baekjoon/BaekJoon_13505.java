@@ -4,7 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-// https://www.acmicpc.net/problem/13505
+//두 수 XOR
+//https://www.acmicpc.net/problem/13505
 public class BaekJoon_13505 {
 
     public static void main(String[] args) throws IOException {

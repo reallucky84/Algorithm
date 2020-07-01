@@ -3,8 +3,8 @@ package baekjoon;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
-// https://www.acmicpc.net/problem/1182
+//부분수열의 합
+//https://www.acmicpc.net/problem/1182
 public class BaekJoon_1182 {
 
     public static int count = 0;

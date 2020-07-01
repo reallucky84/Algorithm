@@ -5,7 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-// https://www.acmicpc.net/problem/10815
+//숫자 카드
+//https://www.acmicpc.net/problem/10815
 public class BaekJoon_10815 {
 
     public static void main(String[] args) throws IOException {

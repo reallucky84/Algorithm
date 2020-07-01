@@ -4,7 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-// https://www.acmicpc.net/problem/16916
+//부분 문자열
+//https://www.acmicpc.net/problem/16916
 public class BaekJoon_16916 {
 
     public static int mod = 127;

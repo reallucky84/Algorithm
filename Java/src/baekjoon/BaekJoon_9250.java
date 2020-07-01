@@ -5,7 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-// https://www.acmicpc.net/problem/9250
+//문자열 집합 판별
+//https://www.acmicpc.net/problem/9250
 public class BaekJoon_9250 {
 
     private static class Trie {

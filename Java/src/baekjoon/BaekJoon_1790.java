@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+//수 이어 쓰기 2
 //https://www.acmicpc.net/problem/1790
 public class BaekJoon_1790 {
 

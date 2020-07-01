@@ -8,7 +8,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-// https://www.acmicpc.net/problem/14888
+//연산자 끼워넣기
+//https://www.acmicpc.net/problem/14888
 public class BaekJoon_14888 {
 
     public static char[] op = new char[]{'+', '-', '*', '/'};

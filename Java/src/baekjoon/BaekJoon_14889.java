@@ -5,7 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-// https://www.acmicpc.net/problem/14889
+//스타트와 링크
+//https://www.acmicpc.net/problem/14889
 public class BaekJoon_14889 {
 
     public static void main(String[] args) throws IOException {

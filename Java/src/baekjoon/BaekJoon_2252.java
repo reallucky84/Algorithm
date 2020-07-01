@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
+//줄 세우기
 //https://www.acmicpc.net/problem/2252
 public class BaekJoon_2252 {
 

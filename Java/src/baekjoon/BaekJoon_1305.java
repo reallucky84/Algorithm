@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.List;
-
-// https://www.acmicpc.net/problem/1305
+//광고
+//https://www.acmicpc.net/problem/1305
 public class BaekJoon_1305 {
 
     public static void main(String[] args) throws IOException {

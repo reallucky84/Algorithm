@@ -4,7 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-// https://www.acmicpc.net/problem/14425
+//문자열 집합
+//https://www.acmicpc.net/problem/14425
 public class BeakJoon_14425 {
 
     public static void main(String[] args) throws IOException {
